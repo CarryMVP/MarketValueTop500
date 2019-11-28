@@ -1,6 +1,6 @@
 *{ margin:0;padding:0;border: none;outline:none;}
 a, img{ display:block;outline:none;margin:0 auto;}
-html,body{background:; width: 100%;height: 100%; overflow: hidden;font-family: "Microsoft YaHei",Arial; position: relative;-webkit-text-size-adjust:none;-webkit-user-select:none;-webkit-overflow-scrolling: touch;overflow-scrolling: touch;}
+html,body{width: 100%;height: 100%; overflow: hidden;font-family: "Microsoft YaHei",Arial; position: relative;-webkit-text-size-adjust:none;-webkit-user-select:none;-webkit-overflow-scrolling: touch;overflow-scrolling: touch;}
 body{width:100%;margin:0 auto;font-size:50px; height:100%; background:#5846cc url(../images/bg.png?v=1) no-repeat top center; background-size:100%;}
 
 /***********loading**********/
@@ -16,7 +16,6 @@ body{width:100%;margin:0 auto;font-size:50px; height:100%; background:#5846cc ur
 .sel span, .sel_f span{ display:none;}
 .selected_hangye{ padding-left:0.6rem;}
 #city:after{display:block;content:'';background: url(../images/jt.png) no-repeat left center;background-size:0.5rem;position:absolute;width:0.7rem;height:0.9rem;top:0;right:0;}
-.selected{}
 .content p span{font-size:0.28rem;color:#dbd214;}
 .select{width:5.2rem;padding-top: 0.2rem;margin:0 auto;}
 .input-container{display:flex;justify-content:space-between;width:2.5rem;}
@@ -35,7 +34,6 @@ body{width:100%;margin:0 auto;font-size:50px; height:100%; background:#5846cc ur
 .table1 td:last-child p:after{border:0;}
 .table2{height:3.3rem;overflow: hidden;overflow-y: auto;-webkit-overflow-scrolling:touch;padding:0 0.15rem;}
 #table td, #table1 td, #tables td{font-size:0.25rem;line-height:0.45rem;text-align:center;}
-#table tr td:first-child, #tables tr td:first-child{}
 #table tr, #table1 tr, #tables tr{ position:relative;}
 #table tr td, #table1 tr td, #tables tr td{ border-bottom:1px solid rgba(255,255,255,0.3);}
 #table tr td:last-child, #table1 tr td:last-child, #tables tr td:last-child{color:#ffd055;}
@@ -63,7 +61,7 @@ td.xj:after{display:block;content:'';background: url(../images/d.png?v-1) no-rep
 #search_data{background:rgba(0, 0, 0, 0.8);color:#fff;height:66%;overflow-y:scroll;-webkit-overflow-scrolling: touch;position:absolute;left:0;right:0;top:50px;display: none;z-index: 10;}
 #search_data ul li{line-height: 22px;padding: 5px 0;font-size: 14px;font-family: 微软雅黑;}
 .p3_button {position: absolute; z-index: 111;color: #fff;top: 20%; width:36%;line-height: 1;font-size: 100%;vertical-align: middle;white-space: nowrap; text-align: center;cursor: pointer;left:0.5rem;}
-.p3_button span{display: inline-block; width: 90%;padding:5px 0 8px 0;border-radius:18px;font-size:0.3rem;border:1px solid #fff;float: left;text-overflow: ellipsis; white-space: nowrap;overflow: hidden;color:#fff;}
+.p3_button span{display: inline-block; width: 90%;padding:5px 0 8px 0;border-radius:18px;font-size:0.3rem;border:1px solid #fff;text-overflow: ellipsis; white-space: nowrap;overflow: hidden;color:#fff;}
 .p3_button span.cun, .p3_button span.cun1 {visibility: hidden;width: 0px;height: 0px;padding: 0;margin: 0;}
 .p3_input {left:57%;background: url(../images/btn.png) no-repeat center;border-radius: 18px;}
 #dis_submit, #submit {border: 0;color:#ffffff;font-weight: bold;}
