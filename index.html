@@ -19,6 +19,13 @@
         </div>
         <div class="page1">
             <!-- 代码部分begin -->
+<<<<<<< HEAD
+=======
+            <!-- <div id="top">
+                <img src="images/top.png" style="width:100%;">
+            </div> -->
+            <img src="images/shine.png" id="shine" />
+>>>>>>> 8f8213861e018956ad556ddf1b107354b459a3af
             <img src="images/banner.png?v=" class="img1" />
             <div class="cont">
                 <div class="select">
@@ -228,7 +235,14 @@
 
                 </div>
 
+<<<<<<< HEAD
                 <img src="images/copy.png" style="width: 50%;" />
+=======
+                <img src="images/copy.png" style="width: 50%;" id="logoBanner" />
+                <img src="images/footer1.png" id="footer1">
+                <img src="images/footer2.png" id="footer2">
+                <img id="footer" src="images/footer.png" />
+>>>>>>> 8f8213861e018956ad556ddf1b107354b459a3af
             </div>
 
             <div class="pop1">
@@ -244,7 +258,11 @@
                     <div class="p3_button mys" data-id=""><input type="text" id="search" placeholder="请输入公司简称"></div>
                     <div class="p3_input p3_button p3_buttonss" style="background-image:url(images/btn1.png);"><span
                             class="cun"></span><span class="cun1"></span><span id="submit"
+<<<<<<< HEAD
                             style="color:#421e74;">查询</span> </div>
+=======
+                            style="color:#fff;">查询</span> </div>
+>>>>>>> 8f8213861e018956ad556ddf1b107354b459a3af
                 </div>
                 <!--搜索列表-->
                 <div id="search_data" class="gdt" style="display: none">
@@ -333,6 +351,15 @@
                     images.push("images/jt.png");
                     images.push("images/logo.png");
                     images.push("images/close.png");
+                    images.push("images/btn1.png");
+                    images.push("images/copy.png");
+                    images.push("images/d.png");
+                    images.push("images/up.png");
+                    images.push("images/footer.png");
+                    images.push("images/footer1.png");
+                    images.push("images/footer2.png");
+                    images.push("images/top.png");
+                    images.push("images/shine.png");
                     /*这里是真正的图片预加载 preload*/
                     $.imgpreload(images, {
                         each: function () {
@@ -347,6 +374,7 @@
                             /*this will be called after all images loaded*/
                             $("#percentShow ").html("100<sup>%</sup>");
                             $(".load").hide();
+                            $("#shine").addClass('twinkle'); 
                         }
                     });
                 };
@@ -383,7 +411,7 @@
                     var txt1 = $(this).find('span').text();
                     console.log(value);
                     var data_c = data_hy[value]
-                    var d = '<div class="citys" style="height:0.7rem;line-height:0.7rem;"><p style="text-align:center;font-size:0.32rem;padding-bottom:0.2rem;font-weight: bold;color:#ffd055;">' + txt + '&nbsp;<span>' + txt1 + '家</span></p></div><div class="content"><table cellpadding="0" cellspacing="0" class="table1"><tr><td style="width:11%;"><p class="head_t">排名</p></td><td style="width:13%;"><p class="head_t">同比</p></td><td style="width:31%;"><p class="head_t">公司简称</p></td><td style="width:20%;"><p class="head_t">地区</p></td><td style="width:22%;"><p class="head_t guzhi">总市值</br>(亿人民币)</p></td></tr></table></div><div class="table2" style="height:80%;"><table cellpadding="0" cellspacing="0" id="table">';
+                    var d = '<div class="citys" style="height:0.7rem;line-height:0.7rem;"><p style="text-align:center;font-size:0.32rem;padding-bottom:0.2rem;font-weight: bold;color:#fff;">' + txt + '&nbsp;<span>' + txt1 + '家</span></p></div><div class="content"><table cellpadding="0" cellspacing="0" class="table1"><tr><td style="width:11%;"><p class="head_t">排名</p></td><td style="width:13%;"><p class="head_t">同比</p></td><td style="width:31%;"><p class="head_t">公司简称</p></td><td style="width:20%;"><p class="head_t">地区</p></td><td style="width:22%;"><p class="head_t guzhi">总市值</br>(亿人民币)</p></td></tr></table></div><div class="table2" style="height:80%;"><table cellpadding="0" cellspacing="0" id="table">';
                     for (var i = 0; i < data_c.length; i++) {
                         d = d + '<tr><td style="width:11%;">' + data_c[i][0] + '</td><td style="width:13%;" class="' + data_c[i][5] + '">' + data_c[i][1] + '</td><td style="width:34%;">' + data_c[i][2] + '</td><td style="width:21%;">' + data_c[i][3] + '</td><td style="width:20%;">' + data_c[i][4] + '</td></tr>';
                         //d=d+data_c[i];
@@ -420,7 +448,7 @@
                     var txt1 = $(this).find('span').text();
                     console.log(value);
                     var data_c = data_cont[value]
-                    var d = '<div class="citys" style="height:0.7rem;line-height:0.7rem;"><p style="text-align:center;font-size:0.32rem;padding-bottom:0.2rem;font-weight: bold;color:#ffd055;">' + txt + '&nbsp;<span>' + txt1 + '家</span></p></div><div class="content"><table cellpadding="0" cellspacing="0" class="table1"><tr><td style="width:12%;"><p class="head_t">排名</p></td><td style="width:13%;"><p class="head_t">同比</p></td><td style="width:30%;"><p class="head_t">公司简称</p></td><td style="width:22%;"><p class="head_t">行业</p></td><td style="width:23%;"><p class="head_t guzhi">总市值</br>(亿人民币)</p></td></tr></table></div><div class="table2" style="height:80%;"><table cellpadding="0" cellspacing="0" id="table">';
+                    var d = '<div class="citys" style="height:0.7rem;line-height:0.7rem;"><p style="text-align:center;font-size:0.32rem;padding-bottom:0.2rem;font-weight: bold;color:#fff;">' + txt + '&nbsp;<span>' + txt1 + '家</span></p></div><div class="content"><table cellpadding="0" cellspacing="0" class="table1"><tr><td style="width:12%;"><p class="head_t">排名</p></td><td style="width:13%;"><p class="head_t">同比</p></td><td style="width:30%;"><p class="head_t">公司简称</p></td><td style="width:22%;"><p class="head_t">行业</p></td><td style="width:23%;"><p class="head_t guzhi">总市值</br>(亿人民币)</p></td></tr></table></div><div class="table2" style="height:80%;"><table cellpadding="0" cellspacing="0" id="table">';
                     for (var i = 0; i < data_c.length; i++) {
                         d = d + '<tr><td style="width:11%;">' + data_c[i][0] + '</td><td style="width:13%;" class="' + data_c[i][5] + '"> ' + data_c[i][1] + '</td><td style="width:31%;">' + data_c[i][2] + '</td><td style="width:25%;">' + data_c[i][3] + '</td><td style="width:20%;">' + data_c[i][4] + '</td></tr>';
                         //d=d+data_c[i];
