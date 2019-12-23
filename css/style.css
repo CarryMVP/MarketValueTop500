@@ -89,7 +89,7 @@ td.xj:after{display:block;content:'';background: url(../images/d.png?v-1) no-rep
 #footer{z-index: -1; width: 100%; position: absolute;bottom: 0;}
 
 /**完整榜单**/
-.pop, .pop1{ position:absolute;top:2.7rem;left:0.15rem;font-size:0.26rem;line-height:0.35rem;width:5.8rem;height:67%;min-height:7rem;border: 0.05rem solid #fff;background:#102d5b;color:#fff;margin:0 auto;display:none;}
+.pop, .pop1{ position:absolute;top:2.4rem;left:0.15rem;font-size:0.26rem;line-height:0.35rem;width:5.8rem;height:67%;min-height:7rem;border: 0.05rem solid #fff;background:#102d5b;color:#fff;margin:0 auto;display:none;}
 .pop{left:0.15rem;
     font-size: 0.26rem;
     line-height: 0.35rem;
