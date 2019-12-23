@@ -22,8 +22,14 @@
             <!-- <div id="top">
                 <img src="images/top.png" style="width:100%;">
             </div> -->
+            <img src="images/float1.png" id="float1">
+            <img src="images/float2.png" id="float2">
             <img src="images/shine.png" id="shine" />
             <img src="images/banner.png?v=" class="img1" />
+            <img src="images/copy.png" style="width: 50%;" id="logoBanner" />
+            <img src="images/footer1.png" id="footer1">
+            <img src="images/footer2.png" id="footer2">
+            <img id="footer" src="images/footer.png" />
             <div class="cont">
                 <div class="select">
                     <!--    -->
@@ -228,14 +234,7 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
-
-                <img src="images/copy.png" style="width: 50%;" id="logoBanner" />
-                <img src="images/footer1.png" id="footer1">
-                <img src="images/footer2.png" id="footer2">
-                <img id="footer" src="images/footer.png" />
             </div>
 
             <div class="pop1">
@@ -349,6 +348,8 @@
                     images.push("images/footer2.png");
                     images.push("images/top.png");
                     images.push("images/shine.png");
+                    images.push("images/float1.png");
+                    images.push("images/float2.png");
                     /*这里是真正的图片预加载 preload*/
                     $.imgpreload(images, {
                         each: function () {
