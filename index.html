@@ -29,7 +29,7 @@
             <img src="images/copy.png" style="width: 50%;" id="logoBanner" />
             <img src="images/footer1.png" id="footer1">
             <img src="images/footer2.png" id="footer2">
-            <img src="images/footer.png" id="footer"/>
+            <img src="images/footer.png" id="footer" />
             <img src="images/shine.png" id="shine1" />
             <img src="images/shine.png" id="shine2" />
             <img src="images/shine.png" id="shine3" />
@@ -251,9 +251,8 @@
                 <img src="images/close.png" class="close" />
                 <div class="citys">
                     <div class="p3_button mys" data-id=""><input type="text" id="search" placeholder="请输入公司简称"></div>
-                    <div class="p3_input p3_button p3_buttonss" style="background-image:url(images/btn1.png);"><span
-                            class="cun"></span><span class="cun1"></span><span id="submit"
-                            style="color:#fff;">查询</span> </div>
+                    <div class="p3_input p3_button p3_buttonss" style="background-image:url(images/btn1.png);"><span class="cun"></span><span class="cun1"></span><span id="submit" style="color:#fff;">查询</span>
+                    </div>
                 </div>
                 <!--搜索列表-->
                 <div id="search_data" class="gdt" style="display: none">
@@ -318,24 +317,24 @@
         </div>
         <script src="js/data.js?v=1.1"></script>
         <script type="text/javascript">
-            $(function () {
+            $(function() {
                 function int() {
                     var size = $('body').width() * 0.15625;
                     var width = $('html').css('font-size', size + 'px');
                     $('body').css('visibility', 'visible');
                 };
-                int();	//rem，px
+                int(); //rem，px
 
 
                 var imgNum = 0;
                 var images = [];
+
                 function preloadImg() {
                     //把所有该网页上用到的图片文件都预先放入一个数组里 
-                    $.imgpreload(['images/bg.png'], function () {
+                    $.imgpreload(['images/bg.png'], function() {
                         //此处是显示进度百分比时需要用到的背景图，这个可以先加载进去
                     });
                     //then push all other images in array to load 
-                    images.push("images/bg.png");
                     images.push("images/btn.png");
                     images.push("images/all.png");
                     images.push("images/banner.png");
@@ -355,7 +354,7 @@
                     images.push("images/float2.png");
                     /*这里是真正的图片预加载 preload*/
                     $.imgpreload(images, {
-                        each: function () {
+                        each: function() {
                             /*this will be called after each image loaded*/
                             var status = $(this).data('loaded') ? 'success' : 'error';
                             if (status == "success") {
@@ -363,14 +362,14 @@
                                 $("#percentShow").html(Math.round(v * 100) + "<sup>%</sup>");
                             }
                         },
-                        all: function () {
+                        all: function() {
                             /*this will be called after all images loaded*/
                             $("#percentShow ").html("100<sup>%</sup>");
                             $(".load").hide();
-                            $("#shine").addClass('twinkle'); 
-                            $("#shine1").addClass('twinkle'); 
-                            $("#shine2").addClass('twinkle'); 
-                            $("#shine3").addClass('twinkle'); 
+                            $("#shine").addClass('twinkle');
+                            $("#shine1").addClass('twinkle');
+                            $("#shine2").addClass('twinkle');
+                            $("#shine3").addClass('twinkle');
                         }
                     });
                 };
@@ -380,14 +379,13 @@
                 var widht1 = $(window).width();
                 var height1 = $(window).height();
                 $('.end').css('height', height1);
-                var bar = setInterval(function () {
+                var bar = setInterval(function() {
                     if (len > 98) {
                         $(".process-txt").html("加载 " + "100%");
                         clearInterval(bar);
                         $(".process").hide();
                         $('.page1').css('visibility', 'visible');
-                    }
-                    else {
+                    } else {
                         $(".process-txt").html("加载 " + (++len) + "%");
                     }
                 }, 10);
@@ -395,11 +393,11 @@
                 /**************************
                          按照行业排列
                 ***************************/
-                $('.selected_hangye').click(function () {
+                $('.selected_hangye').click(function() {
                     $('div.hangye').fadeToggle();
                     $('div.chose').hide();
                 });
-                $('.hangye div.sel').click(function () {
+                $('.hangye div.sel').click(function() {
                     $('.pop1').show();
                     $(this).parent().fadeOut();
                     var value = $(this).attr('value');
@@ -423,12 +421,12 @@
                 ***************************/
 
                 //选择城市
-                $('.selected').click(function () {
+                $('.selected').click(function() {
                     $('div.chose').fadeToggle();
                     $('div.hangye').hide();
                 });
                 // 城市是0家
-                $('.chose div.sel_f').click(function () {
+                $('.chose div.sel_f').click(function() {
                     $('.pop1').show();
                     var txt = $(this).find('font').text();
                     $('.table').html('<p class="none_data">' + txt + '<br/>暂无数据</p>');
@@ -436,7 +434,7 @@
                     $('.selected').html(txt);
                 });
                 /******选择省份*******/
-                $('.chose div.sel').click(function () {
+                $('.chose div.sel').click(function() {
                     $('.pop1').show();
                     $(this).parent().fadeOut();
                     var value = $(this).attr('value');
@@ -464,14 +462,14 @@
                 }
                 $('#tables').html(b);
                 //完整榜单
-                $('.all_bd').click(function () {
+                $('.all_bd').click(function() {
                     $('.pop').fadeIn();
                     $('div.chose, div.hangye').hide();
                     $('.chose').fadeOut();
                     $('#tables').html(b);
                     $("#search").val("");
                 });
-                $('.close').click(function () {
+                $('.close').click(function() {
                     $('.pop').fadeOut();
                     $('.pop1').fadeOut();
                 });
@@ -479,9 +477,9 @@
                 /**************************
                  * 查询
                  ***************************/
-                $('#search').bind("input propertychange", function () {
+                $('#search').bind("input propertychange", function() {
                     var html = '';
-                    var v = $(this).val();  //转大写字母
+                    var v = $(this).val(); //转大写字母
                     if (v.length < 1) {
                         $('#search_data').hide();
                         $('#search_data > ul').html('');
@@ -496,20 +494,20 @@
                     $('#search_data').show();
                     $('#search_data > ul').html(html);
                 });
-                $('#search_data > ul ').on("click", 'li', function () {
-                    var data = data_all[$(this).data('id')];//获取data的值
+                $('#search_data > ul ').on("click", 'li', function() {
+                    var data = data_all[$(this).data('id')]; //获取data的值
                     $('#search').val(data[2]);
                     var id = $(this).data('id');
                     $('.cun').html(id);
                     $('#search_data').hide();
 
                 });
-                $('#submit').click(function () {
+                $('#submit').click(function() {
                     $("#search").val("");
                     $('#search_data').hide();
                     var id = $('.cun').html();
                     if (id) {
-                        var data = data_all[id];//获取data的值
+                        var data = data_all[id]; //获取data的值
                         $('#tables').html('<tr><td style="width:11%;">' + data[0] + '</td><td style="width:13%;" class="' + data[5] + '">' + data[1] + '</td><td style="width:31%;">' + data[2] + '</td><td style="width:21%;">' + data[3] + '</td><td style="width:22%;">' + data[4] + '</td></tr>');
                     } else {
                         var b = '';
@@ -527,27 +525,47 @@
         <script>
             var jssdk_url = "http://m.21jingji.com/wechat/jssdk/?url=" + encodeURIComponent(window.location.href);
             document.write("<script src='" + jssdk_url + "'><\/script>");
-            wx.ready(function () {
+            wx.ready(function() {
                 var share_title = "最新市值500强！一键查询：各地区、各行业龙头是谁？";
                 var share_desc = "";
                 var share_link = document.location.href + "?v" + Math.random();
                 var share_imgUrl = 'http://static.21jingji.com/images/app/sfcAppShareIcon.jpg';
-                wx.onMenuShareAppMessage({ title: share_title, link: share_link, desc: share_desc, imgUrl: share_imgUrl });
-                wx.onMenuShareTimeline({ title: share_title, link: share_link, desc: share_desc, imgUrl: share_imgUrl });
-                wx.onMenuShareQQ({ title: share_title, link: share_link, desc: share_desc, imgUrl: share_imgUrl });
-                wx.onMenuShareWeibo({ title: share_title, link: share_link, desc: share_desc, imgUrl: share_imgUrl });
+                wx.onMenuShareAppMessage({
+                    title: share_title,
+                    link: share_link,
+                    desc: share_desc,
+                    imgUrl: share_imgUrl
+                });
+                wx.onMenuShareTimeline({
+                    title: share_title,
+                    link: share_link,
+                    desc: share_desc,
+                    imgUrl: share_imgUrl
+                });
+                wx.onMenuShareQQ({
+                    title: share_title,
+                    link: share_link,
+                    desc: share_desc,
+                    imgUrl: share_imgUrl
+                });
+                wx.onMenuShareWeibo({
+                    title: share_title,
+                    link: share_link,
+                    desc: share_desc,
+                    imgUrl: share_imgUrl
+                });
             })
         </script>
         <script>
             var _hmt = _hmt || [];
-            (function () {
+            (function() {
                 var hm = document.createElement("script");
                 hm.src = "//hm.baidu.com/hm.js?9db62e4a83d463a33a4a3dbaffd80ba4";
                 var s = document.getElementsByTagName("script")[0];
                 s.parentNode.insertBefore(hm, s);
             })();
         </script>
-    
+
 </body>
 
 </html>
