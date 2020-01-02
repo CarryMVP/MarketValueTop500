@@ -4,12 +4,36 @@
 <head>
     <meta charset="utf-8" />
     <!--  <meta name="viewport" content="target-densitydpi=device-dpi,width=640,user-scalable=0" />  -->
-    <meta name="viewport" content=" width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui, user-scalable=no" />
-    <title>最新市值500强！一键查询：各地区、各行业龙头是谁？</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css?v=1.21">
+    <meta name="viewport"
+        content=" width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui, user-scalable=no" />
+    <title>2020最新中国市值500强！一键查询：各地区、各行业龙头是谁？</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=2.1">
     <script src="js/jquery.js"></script>
     <script type="text/javascript" src="js/fastclick.js"></script>
     <script type="text/javascript" src="js/jquery.imgpreload.min.js"></script>
+
+    <!--    APP自定义分享-->
+    <meta name="title21" content="2020最新中国市值500强！一键查询：各地区、各行业龙头是谁？" />
+    <meta name="desc21" content="2020最新中国市值500强！一键查询：各地区、各行业龙头是谁？" />
+    <meta name="url21" content="https://app.21jingji.com/html/2019_500qiang/index.html" />
+    <meta name="icon21" content="https://app.21jingji.com/html/20191230nk/images/share1.jpg?v=23" />
+
+    <!--    微信自定义分享-->
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script>
+        var jssdk_url = "https://m.21jingji.com/wechat/jssdk/?url=" + encodeURIComponent(window.location.href);
+        document.write("<script src='" + jssdk_url + "'><\/script>");
+        wx.ready(function () {
+            var share_title = "2020最新中国市值500强！一键查询：各地区、各行业龙头是谁？";
+            var share_desc = "2020最新中国市值500强！一键查询：各地区、各行业龙头是谁？";
+            var share_link = "https://app.21jingji.com/html/2019_500qiang/index.html";
+            var share_imgUrl = 'https://app.21jingji.com/html/20191230nk/images/share1.jpg?v=23';
+            wx.onMenuShareAppMessage({ title: share_title, link: share_link, desc: share_desc, imgUrl: share_imgUrl });
+            wx.onMenuShareTimeline({ title: share_title, link: share_link, desc: share_desc, imgUrl: share_imgUrl });
+            wx.onMenuShareQQ({ title: share_title, link: share_link, desc: share_desc, imgUrl: share_imgUrl });
+            wx.onMenuShareWeibo({ title: share_title, link: share_link, desc: share_desc, imgUrl: share_imgUrl });
+        })
+    </script>
 </head>
 
 <body style="visibility:hidden;">
@@ -20,10 +44,19 @@
         <div class="page1">
             <!-- 代码部分begin -->
             <!-- <div id="top">
-                <img src="images/top.png" style="width:100%;">
-            </div> -->
+      <img src="images/top.png" style="width:100%;">
+      </div> -->
+            <img src="images/float1.png" id="float1">
+            <img src="images/float2.png" id="float2">
             <img src="images/shine.png" id="shine" />
             <img src="images/banner.png?v=" class="img1" />
+            <img src="images/copy.png" id="logoBanner" />
+            <img src="images/footer1.png" id="footer1">
+            <img src="images/footer2.png" id="footer2">
+            <img src="images/footer.png" id="footer" />
+            <img src="images/shine.png" id="shine1" />
+            <img src="images/shine.png" id="shine2" />
+            <img src="images/shine.png" id="shine3" />
             <div class="cont">
                 <div class="select">
                     <!--    -->
@@ -33,88 +66,88 @@
                             <div class="selected_hangye">行业选择&nbsp;&nbsp;&nbsp;&nbsp;</div>
                             <div class="hangye">
                                 <div class="sel" value="0">
-                                    <font>信息技术</font><span>46</span>
+                                    <font>信息技术</font> <span>49</span>
                                 </div>
                                 <div class="sel" value="1">
-                                    <font>银行</font><span>37</span>
+                                    <font>银行</font> <span>32</span>
                                 </div>
                                 <div class="sel" value="2">
-                                    <font>非银金融</font><span>50</span>
+                                    <font>非银金融</font> <span>56</span>
                                 </div>
                                 <div class="sel" value="3">
-                                    <font>房地产</font><span>46</span>
+                                    <font>房地产</font> <span>41</span>
                                 </div>
                                 <div class="sel" value="4">
-                                    <font>汽车</font><span>20</span>
+                                    <font>汽车</font> <span>15</span>
                                 </div>
                                 <div class="sel" value="5">
-                                    <font>食品饮料</font><span>19</span>
+                                    <font>食品饮料</font> <span>24</span>
                                 </div>
                                 <div class="sel" value="6">
-                                    <font>医药生物</font><span>37</span>
+                                    <font>医药生物</font> <span>37</span>
                                 </div>
                                 <div class="sel" value="7">
-                                    <font>交运物流</font><span>27</span>
+                                    <font>交运物流</font> <span>24</span>
                                 </div>
                                 <div class="sel" value="8">
-                                    <font>传媒</font><span>12</span>
+                                    <font>传媒</font> <span>15</span>
                                 </div>
                                 <div class="sel" value="9">
-                                    <font>电气设备</font><span>10</span>
+                                    <font>电气设备</font> <span>9 </span>
                                 </div>
                                 <div class="sel" value="10">
-                                    <font>通信</font><span>16</span>
+                                    <font>通信</font> <span>14</span>
                                 </div>
                                 <div class="sel" value="11">
-                                    <font>电子</font><span>18</span>
+                                    <font>电子</font> <span>36</span>
                                 </div>
                                 <div class="sel" value="12">
-                                    <font>纺织服装</font><span>6</span>
+                                    <font>纺织服装</font> <span>9 </span>
                                 </div>
                                 <div class="sel" value="13">
-                                    <font>钢铁</font><span>6</span>
+                                    <font>钢铁</font> <span>4 </span>
                                 </div>
                                 <div class="sel" value="14">
-                                    <font>公用事业</font><span>29</span>
+                                    <font>公用事业</font> <span>27</span>
                                 </div>
                                 <div class="sel" value="15">
-                                    <font>机械</font><span>12</span>
+                                    <font>机械</font> <span>13</span>
                                 </div>
                                 <div class="sel" value="16">
-                                    <font>化工</font><span>15</span>
+                                    <font>化工</font> <span>8 </span>
                                 </div>
                                 <div class="sel" value="17">
-                                    <font>家电</font><span>10</span>
+                                    <font>家电</font> <span>8 </span>
                                 </div>
                                 <div class="sel" value="18">
-                                    <font>建筑材料</font><span>5</span>
+                                    <font>建筑材料</font> <span>10</span>
                                 </div>
                                 <div class="sel" value="19">
-                                    <font>建筑装饰</font><span>11</span>
+                                    <font>建筑装饰</font> <span>7 </span>
                                 </div>
                                 <div class="sel" value="20">
-                                    <font>煤炭</font><span>6</span>
+                                    <font>煤炭</font> <span>5 </span>
                                 </div>
                                 <div class="sel" value="21">
-                                    <font>农林牧渔</font><span>6</span>
+                                    <font>农林牧渔</font> <span>7 </span>
                                 </div>
                                 <div class="sel" value="22">
-                                    <font>轻工制造</font><span>5</span>
+                                    <font>轻工制造</font> <span>5 </span>
                                 </div>
                                 <div class="sel" value="23">
-                                    <font>商业贸易</font><span>9</span>
+                                    <font>商业贸易</font> <span>8 </span>
                                 </div>
                                 <div class="sel" value="24">
-                                    <font>石油石化</font><span>11</span>
+                                    <font>石油石化</font> <span>11</span>
                                 </div>
                                 <div class="sel" value="25">
-                                    <font>休闲服务</font><span>12</span>
+                                    <font>休闲服务</font> <span>10</span>
                                 </div>
                                 <div class="sel" value="26">
-                                    <font>有色金属</font><span>15</span>
+                                    <font>有色金属</font> <span>13</span>
                                 </div>
                                 <div class="sel" value="27">
-                                    <font>综合</font><span>4</span>
+                                    <font>综合</font> <span>3 </span>
                                 </div>
                             </div>
                         </div>
@@ -124,124 +157,116 @@
                             <div class="selected">地区选择&nbsp;&nbsp;&nbsp;&nbsp;</div>
                             <div class="chose">
                                 <div class="sel" value="0">
-                                    <font>广东</font><span>56</span>
+                                    <font>广东</font> <span>63</span>
                                 </div>
                                 <div class="sel" value="1">
-                                    <font>北京</font><span>94</span>
+                                    <font>北京</font> <span>97</span>
                                 </div>
                                 <div class="sel" value="2">
-                                    <font>香港</font><span>70</span>
+                                    <font>香港</font> <span>61</span>
                                 </div>
                                 <div class="sel" value="3">
-                                    <font>上海</font><span>50</span>
+                                    <font>上海</font> <span>52</span>
                                 </div>
                                 <div class="sel" value="4">
-                                    <font>台湾</font><span>43</span>
+                                    <font>台湾</font> <span>44</span>
                                 </div>
                                 <div class="sel" value="5">
-                                    <font>浙江</font><span>30</span>
+                                    <font>浙江</font> <span>32</span>
                                 </div>
                                 <div class="sel" value="6">
-                                    <font>江苏</font><span>23</span>
+                                    <font>江苏</font> <span>25</span>
                                 </div>
                                 <div class="sel" value="7">
-                                    <font>山东</font><span>17</span>
+                                    <font>山东</font> <span>19</span>
                                 </div>
                                 <div class="sel" value="8">
-                                    <font>安徽</font><span>5</span>
+                                    <font>安徽</font> <span>7 </span>
                                 </div>
                                 <div class="sel" value="9">
-                                    <font>澳门</font><span>6</span>
+                                    <font>澳门</font> <span>6 </span>
                                 </div>
                                 <div class="sel" value="10">
-                                    <font>福建</font><span>10</span>
+                                    <font>福建</font> <span>13</span>
                                 </div>
                                 <div class="sel" value="11">
-                                    <font>甘肃</font><span>1</span>
+                                    <font>甘肃</font> <span>1 </span>
                                 </div>
                                 <div class="sel" value="12">
-                                    <font>广西</font><span>2</span>
+                                    <font>广西</font> <span>2 </span>
                                 </div>
                                 <div class="sel" value="13">
-                                    <font>贵州</font><span>2</span>
+                                    <font>贵州</font> <span>1 </span>
+                                </div>
+                                <div class="sel_f" value="">
+                                    <font>海南</font> <span>0 </span>
                                 </div>
                                 <div class="sel" value="14">
-                                    <font>海南</font><span>1</span>
+                                    <font>河北</font> <span>5 </span>
                                 </div>
                                 <div class="sel" value="15">
-                                    <font>河北</font><span>9</span>
+                                    <font>河南</font> <span>6 </span>
                                 </div>
                                 <div class="sel" value="16">
-                                    <font>河南</font><span>8</span>
+                                    <font>黑龙江</font> <span>1 </span>
                                 </div>
                                 <div class="sel" value="17">
-                                    <font>黑龙江</font><span>1</span>
+                                    <font>湖北</font> <span>8 </span>
                                 </div>
                                 <div class="sel" value="18">
-                                    <font>湖北</font><span>10</span>
+                                    <font>湖南</font> <span>6 </span>
                                 </div>
                                 <div class="sel" value="19">
-                                    <font>湖南</font><span>8</span>
+                                    <font>吉林</font> <span>1 </span>
                                 </div>
                                 <div class="sel" value="20">
-                                    <font>吉林</font><span>2</span>
+                                    <font>江西</font> <span>3 </span>
                                 </div>
                                 <div class="sel" value="21">
-                                    <font>江西</font><span>3</span>
+                                    <font>辽宁</font> <span>6 </span>
                                 </div>
                                 <div class="sel" value="22">
-                                    <font>辽宁</font><span>8</span>
+                                    <font>内蒙古</font> <span>4 </span>
                                 </div>
                                 <div class="sel" value="23">
-                                    <font>内蒙古</font><span>5</span>
+                                    <font>宁夏</font> <span>1 </span>
                                 </div>
                                 <div class="sel_f" value="">
-                                    <font>宁夏</font><span>0</span>
-                                </div>
-                                <div class="sel_f" value="">
-                                    <font>青海</font><span>0</span>
+                                    <font>青海</font> <span>0 </span>
                                 </div>
                                 <div class="sel" value="24">
-                                    <font>山西</font><span>2</span>
+                                    <font>山西</font> <span>3 </span>
                                 </div>
                                 <div class="sel" value="25">
-                                    <font>陕西</font><span>5</span>
+                                    <font>陕西</font> <span>6 </span>
                                 </div>
                                 <div class="sel" value="26">
-                                    <font>四川</font><span>9</span>
+                                    <font>四川</font> <span>8 </span>
                                 </div>
                                 <div class="sel" value="27">
-                                    <font>天津</font><span>6</span>
-                                </div>
-                                <div class="sel_f" value="">
-                                    <font>西藏</font><span>0</span>
+                                    <font>天津</font> <span>5 </span>
                                 </div>
                                 <div class="sel" value="28">
-                                    <font>新疆</font><span>5</span>
+                                    <font>西藏</font> <span>1 </span>
                                 </div>
                                 <div class="sel" value="29">
-                                    <font>云南</font><span>3</span>
+                                    <font>新疆</font> <span>3 </span>
                                 </div>
                                 <div class="sel" value="30">
-                                    <font>重庆</font><span>6</span>
+                                    <font>云南</font> <span>5 </span>
+                                </div>
+                                <div class="sel" value="31">
+                                    <font>重庆</font> <span>5 </span>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
-
-                <img src="images/copy.png" style="width: 50%;" id="logoBanner" />
-                <img src="images/footer1.png" id="footer1">
-                <img src="images/footer2.png" id="footer2">
-                <img id="footer" src="images/footer.png" />
             </div>
 
             <div class="pop1">
                 <img src="images/close.png" class="close" />
                 <div class="table">
-
                 </div>
             </div>
 
@@ -250,8 +275,8 @@
                 <div class="citys">
                     <div class="p3_button mys" data-id=""><input type="text" id="search" placeholder="请输入公司简称"></div>
                     <div class="p3_input p3_button p3_buttonss" style="background-image:url(images/btn1.png);"><span
-                            class="cun"></span><span class="cun1"></span><span id="submit"
-                            style="color:#fff;">查询</span> </div>
+                            class="cun"></span><span class="cun1"></span><span id="submit" style="color:#fff;">查询</span>
+                    </div>
                 </div>
                 <!--搜索列表-->
                 <div id="search_data" class="gdt" style="display: none">
@@ -304,7 +329,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="table2" style="height:83%;">
+                    <div class="table2" style="height:90%;">
                         <table cellpadding="0" cellspacing="0" id="tables">
 
                         </table>
@@ -314,7 +339,7 @@
             </div>
 
         </div>
-        <script src="js/data.js?v=1.1"></script>
+        <script src="js/data.js?v=2.1"></script>
         <script type="text/javascript">
             $(function () {
                 function int() {
@@ -322,18 +347,18 @@
                     var width = $('html').css('font-size', size + 'px');
                     $('body').css('visibility', 'visible');
                 };
-                int();	//rem，px
+                int(); //rem，px
 
 
                 var imgNum = 0;
                 var images = [];
+
                 function preloadImg() {
                     //把所有该网页上用到的图片文件都预先放入一个数组里 
                     $.imgpreload(['images/bg.png'], function () {
                         //此处是显示进度百分比时需要用到的背景图，这个可以先加载进去
                     });
                     //then push all other images in array to load 
-                    images.push("images/bg.png");
                     images.push("images/btn.png");
                     images.push("images/all.png");
                     images.push("images/banner.png");
@@ -349,6 +374,8 @@
                     images.push("images/footer2.png");
                     images.push("images/top.png");
                     images.push("images/shine.png");
+                    images.push("images/float1.png");
+                    images.push("images/float2.png");
                     /*这里是真正的图片预加载 preload*/
                     $.imgpreload(images, {
                         each: function () {
@@ -363,7 +390,10 @@
                             /*this will be called after all images loaded*/
                             $("#percentShow ").html("100<sup>%</sup>");
                             $(".load").hide();
-                            $("#shine").addClass('twinkle'); 
+                            $("#shine").addClass('twinkle');
+                            $("#shine1").addClass('twinkle');
+                            $("#shine2").addClass('twinkle');
+                            $("#shine3").addClass('twinkle');
                         }
                     });
                 };
@@ -379,14 +409,13 @@
                         clearInterval(bar);
                         $(".process").hide();
                         $('.page1').css('visibility', 'visible');
-                    }
-                    else {
+                    } else {
                         $(".process-txt").html("加载 " + (++len) + "%");
                     }
                 }, 10);
 
                 /**************************
-                         按照行业排列
+                				 按照行业排列
                 ***************************/
                 $('.selected_hangye').click(function () {
                     $('div.hangye').fadeToggle();
@@ -398,7 +427,7 @@
                     var value = $(this).attr('value');
                     var txt = $(this).find('font').text();
                     var txt1 = $(this).find('span').text();
-                    console.log(value);
+                    // console.log(value);
                     var data_c = data_hy[value]
                     var d = '<div class="citys" style="height:0.7rem;line-height:0.7rem;"><p style="text-align:center;font-size:0.32rem;padding-bottom:0.2rem;font-weight: bold;color:#fff;">' + txt + '&nbsp;<span>' + txt1 + '家</span></p></div><div class="content"><table cellpadding="0" cellspacing="0" class="table1"><tr><td style="width:11%;"><p class="head_t">排名</p></td><td style="width:13%;"><p class="head_t">同比</p></td><td style="width:31%;"><p class="head_t">公司简称</p></td><td style="width:20%;"><p class="head_t">地区</p></td><td style="width:22%;"><p class="head_t guzhi">总市值</br>(亿人民币)</p></td></tr></table></div><div class="table2" style="height:80%;"><table cellpadding="0" cellspacing="0" id="table">';
                     for (var i = 0; i < data_c.length; i++) {
@@ -412,7 +441,7 @@
                 });
 
                 /**************************
-                         按照城市排列
+                				 按照城市排列
                 ***************************/
 
                 //选择城市
@@ -435,7 +464,7 @@
                     var value = $(this).attr('value');
                     var txt = $(this).find('font').text();
                     var txt1 = $(this).find('span').text();
-                    console.log(value);
+                    // console.log(value);
                     var data_c = data_cont[value]
                     var d = '<div class="citys" style="height:0.7rem;line-height:0.7rem;"><p style="text-align:center;font-size:0.32rem;padding-bottom:0.2rem;font-weight: bold;color:#fff;">' + txt + '&nbsp;<span>' + txt1 + '家</span></p></div><div class="content"><table cellpadding="0" cellspacing="0" class="table1"><tr><td style="width:12%;"><p class="head_t">排名</p></td><td style="width:13%;"><p class="head_t">同比</p></td><td style="width:30%;"><p class="head_t">公司简称</p></td><td style="width:22%;"><p class="head_t">行业</p></td><td style="width:23%;"><p class="head_t guzhi">总市值</br>(亿人民币)</p></td></tr></table></div><div class="table2" style="height:80%;"><table cellpadding="0" cellspacing="0" id="table">';
                     for (var i = 0; i < data_c.length; i++) {
@@ -448,7 +477,7 @@
                 });
 
                 /**************************
-                         完整榜单
+                				 完整榜单
                 ***************************/
                 var b = '';
                 for (var i = 0; i < data_all.length; i++) {
@@ -474,7 +503,7 @@
                  ***************************/
                 $('#search').bind("input propertychange", function () {
                     var html = '';
-                    var v = $(this).val();  //转大写字母
+                    var v = $(this).val(); //转大写字母
                     if (v.length < 1) {
                         $('#search_data').hide();
                         $('#search_data > ul').html('');
@@ -490,7 +519,7 @@
                     $('#search_data > ul').html(html);
                 });
                 $('#search_data > ul ').on("click", 'li', function () {
-                    var data = data_all[$(this).data('id')];//获取data的值
+                    var data = data_all[$(this).data('id')]; //获取data的值
                     $('#search').val(data[2]);
                     var id = $(this).data('id');
                     $('.cun').html(id);
@@ -502,7 +531,7 @@
                     $('#search_data').hide();
                     var id = $('.cun').html();
                     if (id) {
-                        var data = data_all[id];//获取data的值
+                        var data = data_all[id]; //获取data的值
                         $('#tables').html('<tr><td style="width:11%;">' + data[0] + '</td><td style="width:13%;" class="' + data[5] + '">' + data[1] + '</td><td style="width:31%;">' + data[2] + '</td><td style="width:21%;">' + data[3] + '</td><td style="width:22%;">' + data[4] + '</td></tr>');
                     } else {
                         var b = '';
@@ -516,21 +545,6 @@
             });
         </script>
         <!-- 代码部分end -->
-        <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-        <script>
-            var jssdk_url = "http://m.21jingji.com/wechat/jssdk/?url=" + encodeURIComponent(window.location.href);
-            document.write("<script src='" + jssdk_url + "'><\/script>");
-            wx.ready(function () {
-                var share_title = "最新市值500强！一键查询：各地区、各行业龙头是谁？";
-                var share_desc = "";
-                var share_link = document.location.href + "?v" + Math.random();
-                var share_imgUrl = 'http://static.21jingji.com/images/app/sfcAppShareIcon.jpg';
-                wx.onMenuShareAppMessage({ title: share_title, link: share_link, desc: share_desc, imgUrl: share_imgUrl });
-                wx.onMenuShareTimeline({ title: share_title, link: share_link, desc: share_desc, imgUrl: share_imgUrl });
-                wx.onMenuShareQQ({ title: share_title, link: share_link, desc: share_desc, imgUrl: share_imgUrl });
-                wx.onMenuShareWeibo({ title: share_title, link: share_link, desc: share_desc, imgUrl: share_imgUrl });
-            })
-        </script>
         <script>
             var _hmt = _hmt || [];
             (function () {
@@ -540,7 +554,7 @@
                 s.parentNode.insertBefore(hm, s);
             })();
         </script>
-    
+
 </body>
 
 </html>
